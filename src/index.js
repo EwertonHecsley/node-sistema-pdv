@@ -12,22 +12,24 @@ const rota_editar_usuario = require('./rotas/usuario/editar_usuario');
 const rota_cadastrar_produto = require('./rotas/produto/cadastrar-produto');
 const rota_editar_produto = require('./rotas/produto/editar_produto');
 const rota_listar_produto = require('./rotas/produto/listar_produto');
+const rota_detalhar_produto = require('./rotas/produto/detalhar_produto');
 const { validarToken } = require('./intermediarios/validar_token');
 
-
+//Rotas Livres
 app.use('/', rota_listar_categoria);
 app.use('/', rota_cadastrar_usuario);
 app.use('/', rota_login);
 
 app.use(validarToken);//Verifica sempre se o usuario está logado
 
+//Rotas de Usuario
 app.use('/', rota_detalhar_usuario);
 app.use('/', rota_editar_usuario);
 
-//===========================================//
-
+//Rotas de Produtos
 app.use('/', rota_cadastrar_produto);
 app.use('/', rota_editar_produto);
+app.use('/', rota_detalhar_produto);
 app.use('/', rota_listar_produto);
 
 
