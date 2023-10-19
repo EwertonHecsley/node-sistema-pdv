@@ -19,7 +19,7 @@ const atualizarPruduto = async (req, res) => {
             await atualizarImagemDoProduto(id, req.file);
         };
 
-        return res.status(200).json({ mensagem: 'Produto atualizado com sucesso' });
+        return res.status(200).json({ mensagem: 'Produto atualizado com sucesso.' });
 
     } catch (error) {
         console.log(error)

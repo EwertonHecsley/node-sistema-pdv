@@ -26,7 +26,7 @@ const cadastrarProduto = async (req, res) => {
             produto = await knex('produtos').update({ produto_imagem: imagem.url }).where({ id }).returning('*');
         };
 
-        return res.status(201).json({ mensagem: 'Produto cadastrado com sucesso!', produto });
+        return res.status(201).json({ mensagem: 'Produto cadastrado com sucesso.', produto });
 
     } catch (error) {
         console.log(error);

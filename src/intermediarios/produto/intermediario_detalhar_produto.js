@@ -7,7 +7,7 @@ const intermediarioDetalharProdutoId = async (req, res, next) => {
         const buscarProduto = await knex('produtos').where({ id }).first();
 
         if (!buscarProduto) {
-            return res.status(404).json({ mensagem: 'Produto não encontrado' });
+            return res.status(404).json({ mensagem: 'Produto não encontrado.' });
         };
 
         req.produto = buscarProduto;

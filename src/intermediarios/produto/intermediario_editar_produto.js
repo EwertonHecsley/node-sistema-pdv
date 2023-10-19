@@ -8,13 +8,13 @@ const intermediarioEditarProduto = async (req, res, next) => {
         const produto = await knex('produtos').where({ id }).first();
 
         if (!produto) {
-            return res.status(404).json({ mensagem: 'Produto não encontrado' });
+            return res.status(404).json({ mensagem: 'Produto não encontrado.' });
         }
 
         const categoria = await knex('categorias').where({ id: categoria_id }).first();
 
         if (!categoria) {
-            return res.status(404).json({ mensagem: 'Categoria de produto não existe' })
+            return res.status(404).json({ mensagem: 'Categoria de produto não existe.' })
         }
 
         next();

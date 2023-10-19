@@ -7,7 +7,7 @@ const verificaCategoriaProduto = async (req, res, next) => {
         const buscaProdutoCategoria = await knex('categorias').select('*').where({ id: categoria_id }).first();
 
         if (!buscaProdutoCategoria) {
-            return res.status(404).json({ mensagem: 'Categoria de produto não encontrado' });
+            return res.status(404).json({ mensagem: 'Categoria de produto não encontrado.' });
         };
 
         next();

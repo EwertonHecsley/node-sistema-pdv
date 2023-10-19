@@ -8,7 +8,7 @@ const intermediarioListarProduto = async (req, res, next) => {
             const verificaCategoria = await knex('categorias').where({ id: categoria_id }).first();
 
             if (!verificaCategoria) {
-                return res.status(404).json({ mensagem: 'Categoria de produto não encontrado' })
+                return res.status(404).json({ mensagem: 'Categoria de produto não encontrado.' })
             };
 
             const produtos = await knex('produtos')
@@ -16,7 +16,7 @@ const intermediarioListarProduto = async (req, res, next) => {
                 .where({ categoria_id })
 
             if (produtos.length == 0) {
-                return res.status(404).json({ mensagem: 'Sem produtos cadastrados nessa categoria' })
+                return res.status(404).json({ mensagem: 'Sem produtos cadastrados nessa categoria.' })
             };
 
             req.produtos = produtos
