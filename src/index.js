@@ -10,6 +10,7 @@ const rota_detalhar_usuario = require('./rotas/usuario/detalhar_usuario');
 const rota_editar_usuario = require('./rotas/usuario/editar_usuario');
 
 const rota_cadastrar_produto = require('./rotas/produto/cadastrar-produto');
+const rota_editar_produto = require('./rotas/produto/editar_produto');
 const { validarToken } = require('./intermediarios/validar_token');
 
 
@@ -25,6 +26,7 @@ app.use('/', rota_editar_usuario);
 //===========================================//
 
 app.use('/', rota_cadastrar_produto);
+app.use('/', rota_editar_produto);
 
 
 module.exports = app;
