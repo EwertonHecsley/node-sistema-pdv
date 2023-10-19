@@ -15,6 +15,7 @@ const rota_listar_produto = require('./rotas/produto/listar_produto');
 const rota_detalhar_produto = require('./rotas/produto/detalhar_produto');
 const rota_deletar_produto = require('./rotas/produto/deletar_produto');
 const rota_cadastrar_cliente = require('./rotas/cliente/rota_cliente');
+const rota_editar_cliente = require('./rotas/cliente/rota_editar_cliente');
 const { validarToken } = require('./intermediarios/validar_token');
 
 //Rotas Livres
@@ -37,6 +38,7 @@ app.use('/', rota_listar_produto);
 
 //Rotas de Clientes
 app.use('/', rota_cadastrar_cliente);
+app.use('/', rota_editar_cliente);
 
 
 module.exports = app;
