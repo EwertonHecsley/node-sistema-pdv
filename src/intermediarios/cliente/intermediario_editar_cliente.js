@@ -9,7 +9,7 @@ const intermediarioAtualizarCliente = async (req, res, next) => {
         const cliente = await knex('clientes').where({ id });
 
         if (cliente.length === 0) {
-            return res.status(404).json({ mensagem: 'Cliente não encontrado' });
+            return res.status(404).json({ mensagem: 'Cliente não encontrado.' });
         };
 
         const buscarEmail = await knex('clientes').where({ email }).first();
@@ -23,7 +23,7 @@ const intermediarioAtualizarCliente = async (req, res, next) => {
         const buscarCpf = await knex('clientes').where({ cpf: cpfFormatado }).first();
 
         if (buscarCpf) {
-            return res.status(400).json({ mensagem: 'CPF já cadastrado' });
+            return res.status(400).json({ mensagem: 'CPF já cadastrado.' });
         };
 
         next();

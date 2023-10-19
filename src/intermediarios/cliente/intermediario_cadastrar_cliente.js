@@ -11,13 +11,13 @@ const intermediarioCadastrarCliente = async (req, res, next) => {
         const consultaCpf = await knex('clientes').where({ cpf: cpfFormatado }).first();
 
         if (consultaCpf) {
-            return res.status(400).json({ mensagem: 'CPF já cadastrado' });
+            return res.status(400).json({ mensagem: 'CPF já cadastrado.' });
         };
 
         const consultaEmail = await knex('clientes').where({ email }).first();
 
         if (consultaEmail) {
-            return res.status(400).json({ mensgem: 'Email já cadastrado' });
+            return res.status(400).json({ mensgem: 'Email já cadastrado.' });
         };
 
         const dadosEndereco = await buscaCep(cep);
