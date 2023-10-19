@@ -13,7 +13,7 @@ const validarToken = async (req, res, next) => {
 
         const token = authorization.split(' ')[1];
 
-        const { id } = jwt.verify(token, process.env.KEY_TOKEN);
+        const { id } = jwt.verify(token, process.env.KEY_TOKEN_JWT);
 
         if (!id) {
             return res.status(401).json({ mensagem: 'Usuário não autorizado' });
