@@ -1,6 +1,7 @@
 # Sistema de PDV - Frente de caixa
 
-![api](https://github.com/EwertonHecsley/node-sistema-pdv/assets/114318366/d73dca6f-2020-4edd-8872-3d420f10a89f)
+![javascript](https://github.com/EwertonHecsley/node-sistema-pdv/assets/114318366/c0ac0c68-1596-4682-ad49-a4cecda350a0)
+
 
 
 ## Projeto Backend em Node.js com Express
