@@ -83,3 +83,47 @@ Aqui estão alguns detalhes essenciais sobre este projeto:
 
 
 ## Exemplo de Requisição:
+
+**Requisição:**
+
+**`POST /pedido`**
+
+```
+// Corpo da requisição para cadastro de pedido (body)
+{
+    "cliente_id": 1,
+    "observacao": "Em caso de ausência recomendo deixar com algum vizinho",
+    "pedido_produtos": [
+        {
+            "produto_id": 1,
+            "quantidade_produto": 10
+        },
+        {
+            "produto_id": 2,
+            "quantidade_produto": 20
+        }
+    ]
+}
+```
+
+**Resposta:**
+
+```
+{
+    "mensagem":"Pedido cadastrado com sucesso."
+}
+```
+
+## Contato
+
+* E-mail: ewerton.martinscomercial@gmail.com
+ 
+* LinkedIn: https://www.linkedin.com/in/ewerton-hecsley-8a613992/?trk
+
+
+
+## Como Contribuir
+
+Se você gostou do meu projeto e gostaria de contribuir ou dar feedback, fique à vontade para entrar em contato comigo ou abrir uma "issue" no repositório. Estou sempre aberto a melhorias e colaborações!
+
+
