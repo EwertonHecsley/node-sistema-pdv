@@ -23,6 +23,7 @@ const rota_listar_clientes = require('./rotas/cliente/rota_listar_clientes');
 const rota_detalhar_cliente = require('./rotas/cliente/rota_detalhar_cliente');
 
 const rota_cadastrar_pedido = require('./rotas/pedido/rota_cadastrar_pedido');
+const rota_listar_pedidos = require('./rotas/pedido/rota_listar_pedidos');
 
 const { validarToken } = require('./intermediarios/validar_token');
 
@@ -52,6 +53,6 @@ app.use('/', rota_listar_clientes);
 
 //Rota de Pedidos
 app.use('/', rota_cadastrar_pedido);
-
+app.use('/', rota_listar_pedidos);
 
 module.exports = app;

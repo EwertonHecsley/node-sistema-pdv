@@ -1,4 +1,4 @@
-const knex = require('./src/configuracoes/conexao_bancoDados');
+const knex = require('../../configuracoes/conexao_bancoDados');
 
 const intermediarioCadastrarPedido = async (req, res, next) => {
     const {
