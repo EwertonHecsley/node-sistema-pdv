@@ -1,9 +1,14 @@
-# Sistema de PDV - Frente de caixa
+<div align="center"> 
+ 
+ # Sistema de PDV - Frente de caixa
+</div>
 
 ![api](https://github.com/EwertonHecsley/node-sistema-pdv/assets/114318366/8ef366e3-0c78-4735-83d2-9394aad9fdb6)
 
-
+<div align="center"> 
+ 
 ## Projeto Backend em Node.js com Express
+</div>
 
 Este é um dos meus projetos mais recentes e representa uma **API RESTful** desenvolvida em Node.js, usando o framework **Express**.
 
@@ -16,8 +21,10 @@ Aqui estão alguns detalhes essenciais sobre este projeto:
 * **Funcionalidades Principais:** autenticação de usuários, CRUD para produtos e pedidos.
 
 * **Deploy:** https://weak-tan-drill-ring.cyclic.cloud/
-
+<div align="center"> 
+ 
 ## Requisitos do Projeto
+</div>
 
 **Banco de Dados:**
 
@@ -37,8 +44,10 @@ Aqui estão alguns detalhes essenciais sobre este projeto:
 
 * A API deve responder com códigos de status adequados.
 
-
+<div align="center"> 
+ 
 ## Endpoints
+</div>
 
 **A API inclui os seguintes endpoints:**
 
@@ -72,8 +81,10 @@ Aqui estão alguns detalhes essenciais sobre este projeto:
 
 **`POST /pedido`:** Cadastra um novo pedido, incluindo produtos vinculados.
 
-
+<div align="center"> 
+ 
 ## Instruções de Uso:
+</div>
 
 * Clone este repositório.
 
@@ -84,8 +95,10 @@ Aqui estão alguns detalhes essenciais sobre este projeto:
 * Execute **npm start** para iniciar o servidor.
 
 
-
+<div align="center"> 
+ 
 ## Exemplo de Requisição:
+</div>
 
 **Requisição:**
 
@@ -116,16 +129,19 @@ Aqui estão alguns detalhes essenciais sobre este projeto:
     "mensagem":"Pedido cadastrado com sucesso."
 }
 ```
-
+<div align="center"> 
+ 
 ## Contato
+</div>
 
 * E-mail: ewerton.martinscomercial@gmail.com
  
 * LinkedIn: https://www.linkedin.com/in/ewerton-hecsley-8a613992/?trk
 
-
-
+<div align="center"> 
+ 
 ## Como Contribuir
+</div>
 
 Se você gostou do meu projeto e gostaria de contribuir ou dar feedback, fique à vontade para entrar em contato comigo ou abrir uma "issue" no repositório. Estou sempre aberto a melhorias e colaborações!
 
