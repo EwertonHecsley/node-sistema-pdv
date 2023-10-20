@@ -88,11 +88,11 @@ Aqui estão alguns detalhes essenciais sobre este projeto:
 
 * Clone este repositório.
 
-* Execute **npm install** para instalar as dependências.
+* Execute **`npm install`** para instalar as dependências.
 
-* Configure suas variáveis de ambiente, seguindo o modelo do  **.env.example**
+* Configure suas variáveis de ambiente, seguindo o modelo do  **`.env.example`**
 
-* Execute **npm start** para iniciar o servidor.
+* Execute **`npm start`** para iniciar o servidor.
 
 
 <div align="center"> 
