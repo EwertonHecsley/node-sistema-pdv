@@ -20,7 +20,6 @@ Aqui estão alguns detalhes essenciais sobre este projeto:
 
 * **Funcionalidades Principais:** autenticação de usuários, CRUD para produtos e pedidos.
 
-* **Deploy:** https://weak-tan-drill-ring.cyclic.cloud/
 <div align="center"> 
  
 ## Requisitos do Projeto
